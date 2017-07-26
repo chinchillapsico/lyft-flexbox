@@ -1,0 +1,245 @@
+/*
+Colors: 
+#E54E79; rosa barbie
+#E56385; rosa barbie claro
+#00B2A9; celeste
+#75726C; plomo
+#EDE9E2; casi blanco
+#E54E79; fucsia 
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Raleway";
+	font-size: 16px;	
+	
+}
+#background{
+	background: url("../img/homepage-hero-poster.8ec795d5.jpg")no-repeat  center fixed;
+	background-size: cover;/*Background covers the entire surface*/
+
+}
+nav #head-zone{
+	position: absolute;
+	height: 90px;
+	width: 1300px;
+	margin: 0;
+}
+nav #home{
+	position: absolute;
+	right: 220px;
+
+}
+nav.fixed {
+  position: fixed;
+  background-color: white;
+}
+
+
+
+header{
+	position: relative;
+	margin: 0;
+}
+
+
+
+.logo{
+
+	padding: 0;
+	width: 90px;
+	height: 60px;
+	position: absolute;
+	left: 120px;
+}
+ul{
+	list-style: none;/*así no tienen el símbolo por defecto*/
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+}
+ul li{
+	display: inline-block;/*de esta manera los elementos se colocan de manera horizontal*/
+}
+ul li a{
+	display: inline-block;
+	color: white;
+	padding: 26px;
+	text-decoration: none;
+}
+a:hover, button:hover {/*Al dar estilos al hover del enlace logramos que al pasar el cursor por el enlace este cambie su color(background/texto*/
+	background-color: #00B2A9;
+	color: #212121;
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
+	
+}
+#main-block {
+	
+	position: relative;
+	z-index: 1;
+	top: 90px; 
+	height: 750px;
+	padding-top: 30px; /* height of navbar */
+	
+}
+
+#main-block div {
+	background: #EDE9E2;
+	color: #000000;
+	height: 344px;
+	margin-left: 60%;
+	margin-top: 40px;
+	padding: 30px;
+	border-radius: 3px;
+  overflow: auto;
+  text-transform: uppercase;
+}
+
+h2{
+	font-size: 16px;
+	color: #00B2A9;
+}
+#already{
+	font-size: 15px;
+	color: #212121;
+	text-transform: none;
+	text-decoration: none;
+	text-align:left;
+	padding: 0;
+	border: 0;
+
+}
+#num{
+	color: #212121;
+	outline: 0;
+    border: none;
+    border-bottom: 1px solid #00B2A9;
+    background: transparent;
+}
+
+.footer-distributed{
+	background-color: #75726C;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 80px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #E56385;
+	font:  36px, cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
